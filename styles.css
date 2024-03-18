@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+header {
+  background-color: #e2c5c5;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+
+.course {
+  width: calc(33.33% - 10px);
+  background-color: #fff; /* Set default background color */
+  padding: 5px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .course {
+      width: calc(40% - 10px);
+  }
+}
+
+/* Alternating background color for courses */
+.course:nth-child(odd) {
+  background-color: #c1bbbb; /* Lighter shade */
+}
+
+.course h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course ul li {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+}
+
+/* Style the search input */
+#courseSearch {
+  width: 100%;
+  max-width: 300px; /* Set maximum width */
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the placeholder text */
+#courseSearch::placeholder {
+  color: #999;
+}
+
+/* Style the search input on focus */
+#courseSearch:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
