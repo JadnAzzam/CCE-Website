@@ -38,7 +38,7 @@ main {
       margin-bottom: 10px;
   }
   /* Alternating background color for courses */
-  .coursescontainer:nth-child(3n+1) {
+  .coursescontainer:nth-child(n) {
     background-color: #c1bbbb; /* Lighter shade */
     /* margin-bottom: 10px; */
   }
