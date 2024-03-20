@@ -27,16 +27,24 @@ main {
   padding: 5px;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
-  .course {
-      width: calc(40% - 10px);
-  }
-}
-
 /* Alternating background color for courses */
 .course:nth-child(odd) {
   background-color: #c1bbbb; /* Lighter shade */
 }
+
+@media screen and (max-width: 1023px) {
+  .course {
+      width: calc(50% - 10px);
+      margin-bottom: 10px;
+  }
+  /* Alternating background color for courses */
+  .coursescontainer:nth-child(3n+1) {
+    background-color: #c1bbbb; /* Lighter shade */
+    /* margin-bottom: 10px; */
+  }
+}
+
+
 
 .course h2 {
   font-size: 24px;
